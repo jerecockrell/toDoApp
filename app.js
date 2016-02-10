@@ -2,8 +2,10 @@ console.log('hello world')
 
 function sayItWorked () {
 	var $element = $(event.target);
-
-	console.log('It worked!', $element);
+	var $form = $element.closest('form');
+	var $inputs = $form.find('input');
+	
+	console.log('It worked!', $inputs);
 
 	return false;
 }
