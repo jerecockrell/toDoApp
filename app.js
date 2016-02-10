@@ -7,6 +7,10 @@ function sayItWorked () {
 	
 	console.log('It worked!', $inputs);
 
+	var value1 = $inputs.first().val();
+	var value2 = $inputs.eq(1).val();
+
+	console.log('Submitted with ', value1, ' and ', value2);
 	return false;
 }
 
